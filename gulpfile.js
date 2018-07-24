@@ -1,9 +1,12 @@
 var gulp = require('gulp');
+var sass = require('gulp-sass');
 
-gulp.task('default', defaultTask);
-
-function defaultTask(done) {
-  // place code for your default task here
+gulp.task('default', function() {
   console.log('testing, following along with lesson');
-  done();
-}
+});
+
+gulp.task('styles', function() {
+  gulp.src('sass/**/*.scss')
+    .pipe(sass())
+    .pipe(gulp.dest('./css'));
+})
