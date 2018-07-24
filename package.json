@@ -20,7 +20,8 @@
   },
   "homepage": "https://github.com/amyFEND/gulp-test#readme",
   "devDependencies": {
-    "gulp": "^4.0.0"
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^5.0.0"
   },
   "dependencies": {
     "gulp-sass": "^4.0.1"
