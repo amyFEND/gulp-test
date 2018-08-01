@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
+var browserSync = require('browser-sync').create();
 
 gulp.task('default', function() {
   console.log('testing, following along with lesson');
@@ -14,3 +15,9 @@ gulp.task('styles', function() {
     }))
     .pipe(gulp.dest('./css'));
 })
+
+var browserSync = require('browser-sync').create();
+ browserSync.init({
+     server: "./"
+ });
+ browserSync.stream();
